@@ -1,0 +1,17 @@
+depends:
+  - homebrew
+  - bash
+
+actions:
+  - action: package.install
+    extra_args:
+      - --cask
+    name: emacs
+
+  - action: file.link
+    from: init.el
+    to: "{{ user.home_dir }}/.config/emacs/init.el"
+
+  - action: file.link
+    from: themes
+    to: "{{ user.home_dir }}/.config/emacs/themes"

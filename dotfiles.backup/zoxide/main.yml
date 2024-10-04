@@ -1,0 +1,6 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    name: zoxide

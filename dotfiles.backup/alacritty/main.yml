@@ -1,0 +1,18 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    name: alacritty
+
+  - action: git.clone
+    repository: https://github.com/alacritty/alacritty-theme
+    directory: "{{ user.home_dir }}/.config/alacritty/themes/Presets"
+
+  - action: git.clone
+    repository: https://github.com/catppuccin/alacritty
+    directory: "{{ user.home_dir }}/.config/alacritty/themes/catppuccin"
+
+  - action: file.link
+    from: alacritty.yml
+    to: "{{ user.home_dir }}/.config/alacritty/alacritty.yml"

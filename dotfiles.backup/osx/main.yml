@@ -1,0 +1,48 @@
+actions:
+  # dock 栏移到左侧
+  - action: macos.default
+    domain: com.apple.dock
+    key: orientation
+    kind: string
+    value: left
+
+  # Disable smart dashes as they’re annoying when typing code.
+  - action: macos.default
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    kind: bool
+    value: "false"
+
+  # Disable automatic periods with a double space:
+  - action: macos.default
+    domain: NSGlobalDomain
+    key: NSAutomaticPeriodSubstitutionEnabled
+    kind: bool
+    value: "false"
+
+  # Disable smart quotes as they’re annoying when typing code.
+  - action: macos.default
+    domain: NSGlobalDomain
+    key: NSAutomaticQuoteSubstitutionEnabled
+    kind: bool
+    value: "false"
+
+  # Set a shorter delay until key repeat:
+  - action: macos.default
+    domain: NSGlobalDomain
+    key: InitialKeyRepeat
+    kind: int
+    value: "15"
+
+  # Set a blazingly fast keyboard repeat rate:
+  - action: macos.default
+    domain: NSGlobalDomain
+    key: KeyRepeat
+    kind: int
+    value: "2"
+
+  - action: macos.default
+    domain: com.apple.Dock
+    key: expose-animation-duration
+    kind: float
+    value: "0.1"

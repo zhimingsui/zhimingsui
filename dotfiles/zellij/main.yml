@@ -1,0 +1,19 @@
+actions:
+  - action: command.run
+    command: cargo
+    args:
+      - install
+      - --locked
+      - zellij
+
+  - action: file.link
+    from: zellij/themes
+    to: "{{ user.home_dir }}/.config/zellij/themes"
+
+  - action: file.link
+    from: zellij/layouts
+    to: "{{ user.home_dir }}/.config/zellij/layouts"
+
+  - action: file.link
+    from: zellij/config.kdl
+    to: "{{ user.home_dir }}/.config/zellij/config.kdl"

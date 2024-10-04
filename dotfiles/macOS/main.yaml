@@ -1,0 +1,32 @@
+# depends:
+#   - ./apps
+#   - ./macOS.dock
+#   - ./macOS.finder
+#   - ./macOS.menubar
+#   - ./macOS.mission-control
+#   - ./macOS.trackpad
+
+actions:
+  - action: command.run
+    where: os.name == "macos"
+    command: killall
+    args:
+      - Dock
+
+  - action: command.run
+    where: os.name == "macos"
+    command: killall
+    args:
+      - ControlCenter
+
+  - action: command.run
+    where: os.name == "macos"
+    command: killall
+    args:
+      - SystemUIServer
+
+  - action: command.run
+    where: os.name == "macos"
+    command: killall
+    args:
+      - Finder

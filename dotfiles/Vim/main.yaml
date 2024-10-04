@@ -1,0 +1,6 @@
+actions:
+  - action: command.run
+    command: sh
+    args:
+      - -c
+      - "volta install typescript eslint eslint-plugin-vue bash-language-server javascript-typescript-langserver vue-language-server vscode-css-languageserver-bin vim-language-server dockerfile-language-server-nodejs vscode-html-languageserver-bin prettier wcwidth"

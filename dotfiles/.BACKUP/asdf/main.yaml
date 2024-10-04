@@ -1,0 +1,32 @@
+# depends:
+#   - ./fish
+#   - ./git
+
+# actions:
+#   - action: package.install
+#     list:
+#       - coreutils
+#       - curl
+
+#   - action: git.clone
+#     repository: https://github.com/asdf-vm/asdf
+#     directory: "{{ user.home_dir }}/.asdf"
+
+#   - action: file.link
+#     from: "asdf.fish"
+#     to: "{{ user.home_dir }}/.config/fish/conf.d/asdf.fish"
+
+#   - action: directory.create
+#     path: "{{ user.home_dir }}/.config/fish/completions"
+
+#   - action: file.link
+#     from: "{{ user.home_dir }}/.asdf/completions/asdf.fish"
+#     to: "{{ user.home_dir }}/.config/fish/completions/asdf.fish"
+
+#   - action: file.link
+#     from: .asdfrc
+#     to: "{{ user.home_dir }}/.asdfrc"
+
+#   - action: file.link
+#     from: .default-npm-packages
+#     to: "{{ user.home_dir }}/.default-npm-packages"

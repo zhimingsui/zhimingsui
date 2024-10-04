@@ -1,0 +1,104 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    name: activitywatch
+
+  - action: package.install
+    name: flameshot
+
+  - action: package.install
+    name: microsoft-edge
+
+  - action: package.install
+    name: monitorcontrol
+
+  # - action: package.install
+  #   name: alt-tab
+
+  - action: package.install
+    name: motrix
+
+  - action: package.install
+    name: android-file-transfer
+
+  - action: package.install
+    name: neteasemusic
+
+  - action: package.install
+    name: android-platform-tools
+
+  - action: package.install
+    name: postman
+
+  - action: package.install
+    name: appflowy
+
+  - action: package.install
+    name: hammerspoon
+
+  - action: package.install
+    name: qq
+
+  - action: package.install
+    name: battery-buddy
+
+  - action: package.install
+    name: hyper
+
+  - action: package.install
+    name: raspberry-pi-imager
+
+  - action: package.install
+    name: bitwarden
+
+  - action: package.install
+    name: iina
+
+  - action: package.install
+    name: raycast
+
+  - action: package.install
+    name: blender
+
+  - action: package.install
+    name: impactor
+
+  - action: package.install
+    name: rustdesk
+
+  - action: package.install
+    name: cryptomator
+
+  - action: package.install
+    name: itsycal
+
+  - action: package.install
+    name: squirrel
+
+  - action: package.install
+    extra_args:
+      - --cask
+    name: docker
+
+  - action: package.install
+    name: keka
+
+  - action: package.install
+    name: visual-studio-code
+
+  - action: package.install
+    name: eudic
+
+  - action: package.install
+    name: key-codes
+
+  - action: package.install
+    name: wechat
+
+  - action: package.install
+    name: firefox
+
+  - action: package.install
+    name: keyboardholder

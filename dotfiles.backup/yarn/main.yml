@@ -1,0 +1,7 @@
+depends:
+  - volta
+
+actions:
+  - action: file.link
+    from: config
+    to: "{{ user.home_dir }}/.config/yarn/config"

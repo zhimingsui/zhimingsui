@@ -1,0 +1,11 @@
+# Rime custom default settings
+# encoding: utf-8
+
+patch:
+  "menu/page_size": 4
+  schema_list:
+    - schema: pinyin_simp
+    # - schema: wubi_pinyin
+    # - schema: wubi06
+  "switcher/hotkeys":
+    # - "Control+`"

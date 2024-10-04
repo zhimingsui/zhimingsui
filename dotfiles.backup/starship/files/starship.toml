@@ -1,0 +1,4 @@
+# 根据 schema 提供自动补全
+"$schema" = 'https://starship.rs/config-schema.json'
+
+right_format = """$time"""

@@ -1,0 +1,15 @@
+actions:
+  - action: command.run
+    command: bash
+    args:
+      - -c
+      - 'if [ ! -d "$HOME/.rustup" ]; then curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path; fi'
+
+  - action: directory.create
+    path: "{{ user.home_dir }}/.config/fish/completions"
+
+  - action: command.run
+    command: sh
+    args:
+      - -c
+      - "rustup completions fish > ~/.config/fish/completions/rustup.fish"

@@ -1,0 +1,23 @@
+actions:
+  - action: package.install
+    name: alacritty
+
+  - action: file.link
+    from: alacritty.toml
+    to: "{{ user.home_dir }}/.config/alacritty/alacritty.toml"
+
+  - action: file.download
+    from: https://github.com/catppuccin/alacritty/raw/main/catppuccin-latte.toml
+    to: "{{ user.home_dir }}/.config/alacritty/catppuccin-latte.toml"
+
+  - action: file.download
+    from: https://github.com/catppuccin/alacritty/raw/main/catppuccin-frappe.toml
+    to: "{{ user.home_dir }}/.config/alacritty/catppuccin-frappe.toml"
+
+  - action: file.download
+    from: https://github.com/catppuccin/alacritty/raw/main/catppuccin-macchiato.toml
+    to: "{{ user.home_dir }}/.config/alacritty/catppuccin-macchiato.toml"
+
+  - action: file.download
+    from: https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
+    to: "{{ user.home_dir }}/.config/alacritty/catppuccin-mocha.toml"

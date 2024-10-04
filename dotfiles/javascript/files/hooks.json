@@ -1,0 +1,13 @@
+{
+    "node": {
+        "index": {
+            "template": "https://cdn.npmmirror.com/binaries/node/index.json"
+        },
+        "latest": {
+          "prefix": "https://registry.npmmirror.com/-/binary/node/latest/"
+        },
+        "distro": {
+            "template": "https://registry.npmmirror.com/-/binary/node/v{{version}}/{{filename}}"
+        }
+    }
+}

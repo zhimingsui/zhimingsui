@@ -1,0 +1,19 @@
+depends:
+  - bash
+
+actions:
+  # - action: command.run
+  #   command: curl
+  #   args:
+  #     - https://starship.rs/install.sh
+  #     - --output
+  #     - /tmp/starship_install.sh
+
+  # - action: command.run
+  #   command: bash
+  #   args:
+  #     - /tmp/starship_install.sh
+
+  # - action: file.link
+  #   from: starship.toml
+  #   to: "{{ user.home_dir }}/.config/starship.toml"

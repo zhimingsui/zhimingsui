@@ -1,0 +1,10 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    name: shellcheck
+
+  - action: file.link
+    from: shellcheckrc
+    to: "{{ user.home_dir }}/.config/shellcheckrc"

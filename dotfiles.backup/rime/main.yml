@@ -1,0 +1,50 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    name: squirrel
+
+  # - action: file.link
+  #   source: opencc
+  #   target: "{{ user.home_dir }}/Library/Rime/opencc"
+
+  # - action: file.link
+  #   source: default.custom.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/default.custom.yaml"
+
+  # - action: file.link
+  #   source: installation.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/installation.yaml"
+
+  # - action: file.link
+  #   source: pinyin_simp.custom.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/pinyin_simp.custom.yaml"
+
+  # - action: file.link
+  #   source: pinyin_simp.dict.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/pinyin_simp.dict.yaml"
+
+  # - action: file.link
+  #   source: pinyin_simp.schema.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/pinyin_simp.schema.yaml"
+
+  # - action: file.link
+  #   source: squirrel.custom.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/squirrel.custom.yaml"
+
+  # - action: file.link
+  #   source: user.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/user.yaml"
+
+  # - action: file.link
+  #   source: wubi_pinyin.schema.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/wubi_pinyin.schema.yaml"
+
+  # - action: file.link
+  #   source: wubi06.dict.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/wubi06.dict.yaml"
+
+  # - action: file.link
+  #   source: wubi06.schema.yaml
+  #   target: "{{ user.home_dir }}/Library/Rime/wubi06.schema.yaml"

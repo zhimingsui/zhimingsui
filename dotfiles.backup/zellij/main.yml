@@ -1,0 +1,19 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    name: zellij
+
+  # - action: git.clone
+  #   repository: https://github.com/alacritty/alacritty-theme
+  #   directory: "{{ user.home_dir }}/.config/alacritty/theme-alacritty"
+  - action: file.link
+    from: themes
+    to: "{{ user.home_dir }}/.config/zellij/themes"
+  - action: file.link
+    from: layouts
+    to: "{{ user.home_dir }}/.config/zellij/layouts"
+  - action: file.link
+    from: config.kdl
+    to: "{{ user.home_dir }}/.config/zellij/config.kdl"

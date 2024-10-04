@@ -1,0 +1,10 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    name: neovim
+
+  - action: file.link
+    from: init.lua
+    to: "{{ user.home_dir }}/.config/neovim/init.lua"

@@ -1,0 +1,13 @@
+# depends:
+#   - ./rustup
+
+actions:
+  - action: file.link
+    from: cargo.fish
+    to: "{{ user.home_dir }}/.config/fish/conf.d/cargo.fish"
+
+  - action: command.run
+    command: cargo
+    args:
+      - install
+      - cargo-binstall

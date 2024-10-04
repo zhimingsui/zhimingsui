@@ -1,0 +1,8 @@
+actions:
+  - action: package.install
+    name: git
+
+  - action: file.link
+    from: .gitconfig
+    to: "{{ user.home_dir }}/.gitconfig"
+

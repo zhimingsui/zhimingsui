@@ -1,0 +1,6 @@
+actions:
+  - action: command.run
+    command: sh
+    args:
+      - -c
+      - "volta install trash-cli"

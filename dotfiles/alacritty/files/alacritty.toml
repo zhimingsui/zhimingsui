@@ -1,0 +1,27 @@
+import=[
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+  # "~/.config/alacritty/catppuccin-mocha.toml"
+  ]
+
+# shell = {projram = "/bin/zsh", args = [ "-l"]}
+
+[window]
+dimensions={columns = 0, lines = 0 }
+padding = { x = 25, y = 25 }
+opacity = 0.7
+blur = true
+option_as_alt = "OnlyRight"
+
+[scrolling]
+history = 100000
+multiplier = 1
+
+[font]
+normal = {family = "Source Code Pro", style="Regular"}
+size = 16
+
+[cursor]
+vi_mode_style = {shape = "Beam", blinking = "On"}
+blink_interval = 500

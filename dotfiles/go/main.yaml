@@ -1,0 +1,4 @@
+actions:
+  - action: file.link
+    from: go.fish
+    to: "{{ user.home_dir }}/.config/fish/conf.d/go.fish"

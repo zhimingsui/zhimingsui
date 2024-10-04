@@ -1,0 +1,6 @@
+* Install
+
+- Windows
+#+BEGIN_SRC powershell
+winget install commercialhaskell.stack 
+#+END_SRC

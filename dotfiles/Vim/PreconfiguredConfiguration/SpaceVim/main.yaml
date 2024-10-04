@@ -1,0 +1,22 @@
+actions:
+  - action: command.run
+    command: sh
+    args:
+      - -c
+      - "curl -sLf https://spacevim.org/install.sh | bash"
+
+  - action: file.link
+    from: SpaceVim.d/init.toml
+    to: "{{ user.home_dir }}/.config/SpaceVim.d/init.toml"
+
+  - action: file.link
+    from: SpaceVim.d/autoload/myspacevim.vim
+    to: "{{ user.home_dir }}/.config/SpaceVim.d/autoload/myspacevim.vim"
+
+  - action: command.run
+    command: sh
+    args:
+      - -c
+      - "cd ~/Library/Fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/FiraCodeNerdFontMono-Regular.ttf"
+      # cd ~/.local/share/fonts
+      # curl -fLO https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/SauceCodeProNerdFontMono-Regular.ttf

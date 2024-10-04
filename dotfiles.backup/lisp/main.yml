@@ -1,0 +1,7 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    list: 
+     - sbcl

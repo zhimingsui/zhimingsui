@@ -1,0 +1,46 @@
+* Emacs
+
+** Requirements
+*** Windows
+- MSYS2: 
+  - 下载 [[https://github.com/msys2/msys2-installer/releases][msys2-install Release]]
+  - 安装 ~.\msys2-x86_64-*.exe in --confirm-command --accept-messages --root $env:USERPROFILE\AppData\Local\msys64~
+  - 打开 ~mingw64~ 安装依赖
+    #+begin_src shell
+    pacman -S --needed base-devel \
+      mingw-w64-x86_64-toolchain \
+      mingw-w64-x86_64-xpm-nox \
+      mingw-w64-x86_64-gmp \
+      mingw-w64-x86_64-gnutls \
+      mingw-w64-x86_64-libtiff \
+      mingw-w64-x86_64-giflib \
+      mingw-w64-x86_64-libpng \
+      mingw-w64-x86_64-libjpeg-turbo \
+      mingw-w64-x86_64-librsvg \
+      mingw-w64-x86_64-libwebp \
+      mingw-w64-x86_64-lcms2 \
+      mingw-w64-x86_64-libxml2 \
+      mingw-w64-x86_64-zlib \
+      mingw-w64-x86_64-harfbuzz \
+      mingw-w64-x86_64-libgccjit \
+      mingw-w64-x86_64-sqlite3 \
+      mingw-w64-x86_64-tree-sitter \
+      git
+    #+end_src
+
+** Build
+#+begin_src shell
+git clone https://git.savannah.gnu.org/git/emacs.git
+
+cd emacs
+
+./autogen.sh
+
+./configure --prefix=$HOME/AppData/Local/emacs/29.3 --without-dbus --with-mailutils
+
+make
+
+make check
+
+make install
+#+end_src

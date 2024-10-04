@@ -1,0 +1,12 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    extra_args:
+      - --cask
+    name: docker
+
+  - action: file.link
+    from: daemon.json
+    to: "{{ user.home_dir }}/.docker/daemon.json"

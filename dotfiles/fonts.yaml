@@ -1,0 +1,11 @@
+actions:
+  - action: package.install
+    provider: homebrew
+    repository: homebrew/cask-fonts
+    list:
+      - font-fira-code
+      - font-source-code-pro
+      - font-cascadia-code
+      - font-monaspace
+    extra_args:
+      - --cask

@@ -1,0 +1,7 @@
+actions:
+  - action: command.run
+    command: cargo
+    args:
+      - install
+      - bottom
+      - --locked

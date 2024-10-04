@@ -1,0 +1,44 @@
+actions:
+  - action: file.link
+    from: homebrew.fish
+    to: "{{ user.home_dir }}/.config/fish/conf.d/homebrew.fish"
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: homebrew/bundle
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: homebrew/cask
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: homebrew/cask-drivers
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: homebrew/cask-fonts
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: homebrew/cask-versions
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: homebrew/core
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: homebrew/services
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: koekeishiya/formulae
+
+  # - action: package.repository
+  #   provider: homebrew
+  #   name: mac-cleanup/mac-cleanup-py
+
+  - action: package.repository
+    provider: homebrew
+    name: localsend/localsend

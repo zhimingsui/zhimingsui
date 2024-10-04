@@ -1,0 +1,11 @@
+actions:
+  - action: command.run
+    command: cargo
+    args:
+      - install
+      - starship
+      - --locked
+
+  - action: file.link
+    from: starship.fish
+    to: "{{ user.home_dir }}/.config/fish/conf.d/starship.fish"

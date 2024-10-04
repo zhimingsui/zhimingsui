@@ -1,0 +1,10 @@
+depends:
+  - homebrew
+
+actions:
+  - action: package.install
+    name: wezterm
+
+  - action: file.link
+    from: wezterm
+    to: "{{ user.home_dir }}/.config/wezterm"

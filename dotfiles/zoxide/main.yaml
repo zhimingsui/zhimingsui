@@ -1,0 +1,11 @@
+actions:
+  - action: command.run
+    command: cargo
+    args:
+      - install
+      - zoxide
+      - --locked
+
+  - action: file.link
+    from: zoxide.fish
+    to: "{{ user.home_dir }}/.config/fish/conf.d/zoxide.fish"

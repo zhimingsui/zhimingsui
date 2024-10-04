@@ -1,0 +1,9 @@
+actions:
+  - action: package.install
+    name: visual-studio-code
+
+  - action: macos.default
+    domain: com.microsoft.VSCode 
+    key: ApplePressAndHoldEnabled
+    kind: bool
+    value: "false"
